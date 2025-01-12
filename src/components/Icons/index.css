@@ -1,0 +1,88 @@
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.input-box {
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  max-width: 120px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.icon-item span {
+  font-size: 14px;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .icons-container {
+    gap: 12px;
+  }
+
+  .icon-item {
+    width: 80px;
+  }
+
+  .icon-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-item span {
+    font-size: 12px;
+  }
+
+  .input-box {
+    width: 80%;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .icons-container {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .icon-item {
+    width: 70px;
+  }
+
+  .icon-item img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-item span {
+    font-size: 10px;
+  }
+
+  .input-box {
+    width: 90%;
+    margin-top: 15px;
+  }
+}

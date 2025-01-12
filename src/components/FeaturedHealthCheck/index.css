@@ -1,0 +1,138 @@
+.featured-container {
+  margin: 80px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #e8f2fe;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured-health-checkup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.featured-health-checkup__heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f1f1f;
+  margin: 0;
+}
+
+.featured-health-checkup__view-all {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.featured-health-checkup__view-all:hover {
+  color: #0056b3;
+}
+
+.featured-health-checkup__list-container {
+  overflow-x: auto;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.featured-health-checkup__list-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.featured-health-checkup__list-container::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 4px;
+}
+
+.featured-health-checkup__list-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.featured-health-checkup__list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featured-health-checkup__list-item {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  white-space: nowrap;
+}
+
+.featured-health-checkup__list-item:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+}
+
+.featured-health-checkup__list-item.active {
+  color: #007bff;
+  background-color: #eaf4ff;
+  border-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .featured-container {
+    margin: 40px auto;
+    padding: 15px;
+  }
+
+  .featured-health-checkup__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .featured-health-checkup__heading {
+    font-size: 20px;
+  }
+
+  .featured-health-checkup__view-all {
+    font-size: 12px;
+  }
+
+  .featured-health-checkup__list-item {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-container {
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: none;
+    background-color: #fff;
+  }
+
+  .featured-health-checkup__heading {
+    font-size: 18px;
+  }
+
+  .featured-health-checkup__view-all {
+    font-size: 10px;
+  }
+
+  .featured-health-checkup__list-item {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}
